@@ -1,3 +1,9 @@
 #index-banner {
   background-image: url("../img/hero.jpg");
 }
+#toast-container {
+  top: fixed !important;
+  right: fixed !important;
+  bottom: 10%;
+  left:7%;
+}

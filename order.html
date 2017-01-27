@@ -1,0 +1,186 @@
+<!doctype>
+<html>
+<head>
+  <title>HTML Forms</title>
+  <!-- <link rel="stylesheet" href="css/app.css" /> -->
+  <title>Galvanize Delivers</title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo" background-image="../img/hero.jpg">Galvanize Delivers</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="order.html">Order Delivery</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+        <h5 class="center">Menu</h5>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/burger.jpg">
+              <a class="btn-floating halfway-fab waves-effect waves-light pink"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Kahuna Burger</span>
+              <p>$8.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ice_cream.jpg">
+              <a class="btn-floating halfway-fab waves-effect waves-light pink"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Ice Cream Biscuit</span>
+              <p>$7.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pizza.jpg">
+              <a class="btn-floating halfway-fab waves-effect waves-light pink"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Arugala Pie</span>
+              <p>$11.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ribs.jpg">
+              <a class="btn-floating halfway-fab waves-effect waves-light pink"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Smoked Swine</span>
+              <p>$14.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <h5 class="center">Order</h5>
+        <table class="striped" id="tblRecipet">
+          <thead>
+            <tr>
+              <th data-field="id">Item</th>
+              <th data-field="name"></th>
+              <th data-field="price">Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td text-align='right'>Eclair</td>
+              <td>$0.87</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Subtotal</td>
+              <td id="subtotal">$17.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Tax</td>
+              <td id=tax>$7.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Total</td>
+              <td id="total">$7.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <!-- <div class="input-field col s6">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div> -->
+              <div class="input-field col s12">
+                <i class="material-icons pink-text prefix">account_circle</i>
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons md-18 pink-text prefix">phone</i>
+                <input id="phone" type="tel" class="validate">
+                <label for="disabled">Phone</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons pink-text prefix">home</i>
+                <textarea id="address" class="materialize-textarea"></textarea>
+                <label for="address">Address</label>
+              </div>
+            </div>
+            <div class="row center">
+              <button class="btn btn-large waves-effect waves-light pink" type="button" name="action" id='submit'>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 m8 s12">
+          <h5 class="white-text">Galvanize Delivers</h5>
+          <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+        </div>
+        <div class="col l6 m8 s12">
+          <ul>
+            <li><a class="white-text" href="#!">Home</a></li>
+            <li><a class="white-text" href="order.html">Order Delivery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Galvanize Delivers
+      </div>
+    </div>
+  </footer>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
